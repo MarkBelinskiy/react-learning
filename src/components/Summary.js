@@ -15,7 +15,7 @@ class Summary extends Component {
   static defaultProps = {
     ingredients: 0,
     steps: 0,
-    title: '[recipe]',
+    title: '[recipe summary]',
   };
 
   render () {

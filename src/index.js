@@ -4,11 +4,13 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import Menu from './Menu';
 import data from './data/recipes';
-import Summary from './components/Summary';
 
-//ReactDOM.render(<Menu recipes={data}/>, document.getElementById('root'));
+const elements = (
+  <div>
+    <Menu recipes={data}/>
+  </div>
+);
 
+ReactDOM.render ( elements, document.getElementById ( 'root' ) );
 
-ReactDOM.render(<Summary />,
-  document.getElementById('root'));
-registerServiceWorker();
+registerServiceWorker ();

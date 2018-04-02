@@ -18,11 +18,11 @@ const Menu = ({ recipes }) =>
 
 Menu.displayName = 'Menu'
 
-render(
+/*render(
   <Summary title="Peanut Butter and Jelly"
            ingredients="peanut butter, jelly, bread"
            steps="spread peanut butter and jelly between bread" />,
   document.getElementById('react-container')
 )
 
-export default Menu
+export default Menu*/

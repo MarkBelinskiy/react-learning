@@ -2,6 +2,7 @@ import React  from 'react';
 
 import IngredientsList from './IngredientsList'
 import Instructions from './Instructions'
+import Summary from '../components/Summary';
 
 
 
@@ -11,6 +12,7 @@ const Recipe = ({ name, ingredients, steps}) =>
         <IngredientsList list={ingredients} />
         <Instructions title="Cooking Instructions"
                       steps={steps} />
+      <Summary ingredients={ingredients.length} steps={steps.length} />
     </section>
 
 Recipe.displayName = 'Recipe'
